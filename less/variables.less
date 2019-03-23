@@ -1,0 +1,48 @@
+@main-color: #333;
+@dark-color: #1c1b22;
+@light-color: #7d7d7d;
+@second-color: #efc33d;
+@btn: btn;
+
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-width: 1230px;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h2 {
+  color: @dark-color;
+  font-family: "Museo";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 48px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.desc {
+  color: @main-color;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1.05px;
+}
+
+.@{btn} {
+  color: @main-color;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 40px;
+  color: @dark-color;
+  letter-spacing: 1.05px;
+  border-radius: 20px;
+  background-color: @second-color;
+}

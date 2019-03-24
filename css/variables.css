@@ -1,4 +1,9 @@
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   position: relative;
   height: 100%;
   width: 100%;
@@ -19,15 +24,8 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 1.5px;
 }
-.desc {
-  color: #333333;
-  font-family: "Roboto";
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 1.05px;
-}
 .btn {
+  display: inline-block;
   color: #333333;
   font-family: "Roboto";
   font-size: 14px;
@@ -36,5 +34,16 @@ h2 {
   color: #1c1b22;
   letter-spacing: 1.05px;
   border-radius: 20px;
+  background-color: #efc33d;
+}
+.active {
+  -webkit-transition: .5s all;
+  transition: .5s all;
+  width: 300px;
+}
+.portfolio__nav-active {
+  padding: 4px 14px;
+  color: #fff;
+  border-radius: 15px;
   background-color: #efc33d;
 }

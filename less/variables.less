@@ -5,6 +5,8 @@
 @btn: btn;
 
 .container {
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
   height: 100%;
   width: 100%;
@@ -26,16 +28,8 @@ h2 {
   letter-spacing: 1.5px;
 }
 
-.desc {
-  color: @main-color;
-  font-family: "Roboto";
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 1.05px;
-}
-
 .@{btn} {
+  display: inline-block;
   color: @main-color;
   font-family: "Roboto";
   font-size: 14px;
@@ -45,4 +39,14 @@ h2 {
   letter-spacing: 1.05px;
   border-radius: 20px;
   background-color: @second-color;
+}
+.active {
+  transition: .5s all;
+  width: 300px;
+}
+.portfolio__nav-active {
+  padding: 4px 14px;
+  color: #fff;
+  border-radius: 15px;
+  background-color: #efc33d;
 }

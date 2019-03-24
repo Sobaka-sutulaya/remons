@@ -1,6 +1,10 @@
 body,
 header,
 input,
+fieldset,
+option,
+select,
+legend,
 form,
 section,
 span,
@@ -41,4 +45,12 @@ button:focus {
 a {
   color: #fff;
   text-decoration: none;
+}
+select,
+input,
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
 }

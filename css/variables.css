@@ -36,14 +36,3 @@ h2 {
   border-radius: 20px;
   background-color: #efc33d;
 }
-.active {
-  -webkit-transition: .5s all;
-  transition: .5s all;
-  width: 300px;
-}
-.portfolio__nav-active {
-  padding: 4px 14px;
-  color: #fff;
-  border-radius: 15px;
-  background-color: #efc33d;
-}

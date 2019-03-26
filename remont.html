@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="slick/slick.css">
   <link rel="stylesheet" href="slick/slick-theme.css">
-  <link rel="stylesheet" href="css/main-slider.css">
   <link rel="stylesheet" href="css/main.css">
   <title>Remont</title>
 </head>
@@ -69,7 +68,7 @@
             <h3>капитальный</h3>
           </div>
         </div>
-        <div class="kinds-slider__item active">
+        <div class="kinds-slider__item kinds-active">
           <div class="kinds-slider__item-title">
             <h3>дизайнерский</h3>
           </div>
@@ -170,13 +169,13 @@
         </fieldset>
         <fieldset class="calc__form-input">
           <legend>Площадь квартиры:</legend>
-          <input type="text" name="name" required>
-          <label for="name">м<sup>2</sup></label>
+          <input type="number" name="area" required>
+          <label for="area">м<sup>2</sup></label>
         </fieldset>
         <fieldset class="calc__form-input">
           <legend>Количество комнат:</legend>
-          <input type="text" name="name" required>
-          <label for="name">комнаты</label>
+          <input type="number" name="quantity" required>
+          <label for="quantity">комнаты</label>
         </fieldset>
         <fieldset class="calc__form-btn">
           <button type="submit" class="btn">Расчитать стоимость ремонта</button>
@@ -222,26 +221,165 @@
       </div>
     </div>
   </section>
-  <section id="">
+  <section id="faqs-section">
     <div class="container">
-      
+      <h2>часто задаваемые<br> вопросы</h2>
+      <div class="faqs-wrap">
+        <div class="left-column">
+          <div class="faqs-wrap__item">
+            <h4>Какие этапы выполнения ремонта?</h4>
+            <p>Есть ошибочное мнение, что ремонт нужно делать только в теплое время года. Это не так. В жаркую погоду для просушки нужна хорошая вентиляция, а в дождливую погоду влага вообще очень долго стоит и возникает угроза возникновения плесени.</p>
+          </div>
+          <div class="faqs-wrap__item">
+            <h4>Какие этапы выполнения ремонта?</h4>
+            <p>Есть ошибочное мнение, что ремонт нужно делать только в теплое время года. Это не так. В жаркую погоду для просушки нужна хорошая вентиляция, а в дождливую погоду влага вообще очень долго стоит и возникает угроза возникновения плесени.</p>
+          </div>
+        </div>
+        <div class="right-column">
+          <div class="faqs-wrap__item">
+            <h4>Какие этапы выполнения ремонта?</h4>
+            <p>Есть ошибочное мнение, что ремонт нужно делать только в теплое время года. Это не так. В жаркую погоду для просушки нужна хорошая вентиляция, а в дождливую погоду влага вообще очень долго стоит и возникает угроза возникновения плесени.</p>
+          </div>
+          <div class="faqs-wrap__item">
+            <h4>Какие этапы выполнения ремонта?</h4>
+            <p>Есть ошибочное мнение, что ремонт нужно делать только в теплое время года. Это не так. В жаркую погоду для просушки нужна хорошая вентиляция, а в дождливую погоду влага вообще очень долго стоит и возникает угроза возникновения плесени.</p>
+          </div>
+          <div class="faqs-wrap__item">
+            <h4>Какие этапы выполнения ремонта?</h4>
+            <p>Есть ошибочное мнение, что ремонт нужно делать только в теплое время года. Это не так. В жаркую погоду для просушки нужна хорошая вентиляция, а в дождливую погоду влага вообще очень долго стоит и возникает угроза возникновения плесени.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-  <section id="">
+  <section id="review-section">
     <div class="container">
-      
+      <div class="review-wrap">
+        <h2>оставить заявку на бесплатный замер</h2>
+        <p>Перезвоним, проконсультируем, уточним удобное время и запишем вас на бесплатный замер.</p>
+        <form action="">
+          <input type="text" name="user_name" placeholder="Ваше имя" required>
+          <input type="tel" name="user_tel" placeholder="Ваш телефон" required>
+          <textarea placeholder="Ваше сообщение...">
+          </textarea>
+          <button class="btn" type="submit">Отправить запрос</button>
+        </form>
+      </div>
+      <div class="review-btn">
+        <a class="btn" href="#">бесплатный вызов</a>
+      </div>
+    </div>
+  </section>
+  <section id="advantages-section">
+    <div class="container">
+      <h2>Преимущества нашего<br> предложения</h2>
+      <div class="advantages-wrap">
+        <div class="advantages-wrap__item">
+          <img class="advantages-item__img" src="img/advantages/icon-1.png" alt="">
+          <h3>Начинаем без авансов и предоплат</h3>
+          <p>Вы все оплачиваете по факту выполнения работы</p>
+        </div>
+        <div class="advantages-wrap__item">
+          <img class="advantages-item__img" src="img/advantages/icon-2.png" alt="">
+          <h3>Приступаем к работе в течение 48 часов</h3>
+          <p>Через двое суток мы уже начинаем работу</p>
+        </div>
+        <div class="advantages-wrap__item">
+          <img class="advantages-item__img" src="img/advantages/icon-3.png" alt="">
+          <h3>Производим доставку материалов</h3>
+          <p>Вам больше не нужно беспокоиться о доставке</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="sertificate-section">
+    <div class="container">
+      <h3>Гарантии качества</h3>
+      <div class="sertificate-desc">
+        <p>Sale atomorum sadipscing ut eos, adhuc volumus te ius, usu populo noster ne. Mea ut clita iuvaret feugiat, duo ex odio appetere.</p>
+      </div> 
+      <div class="sertificate-wrap">
+        <img src="img/certificate/1.png" alt="">
+        <img src="img/certificate/2.png" alt="">
+        <img src="img/certificate/1.png" alt="">
+        <img src="img/certificate/2.png" alt="">
+      </div>
+    </div>
+  </section>
+  <section id="contacts-section">
+    <div class="container">
+      <div class="contacts-map">
+        <img src="img/contacts/map.png" alt="">
+      </div>
+      <div class="contacts-content">
+        <h2>Наши <br>контакты</h2>
+        <p>Наш офис находится в самом центре Москвы, с удобной траспортной развязкой и в 10 минутах от метро Кропоткинская
+        </p>
+        <ul>
+          <li>
+            <div class="contacts-content__img">
+              <img src="img/contacts/location.png" alt="">
+            </div>
+            Summo salutandi facilisis 59/2 honestatis facilisis ne usu.
+          </li>
+          <li>
+            <div class="contacts-content__img">
+              <img src="img/contacts/phone-2.png" alt="">
+            </div>
+            <div class="contacts-content__tel">
+              <a href="tel:+7 (327) 143 53 33">+7 (327) 143 53 33</a>
+              <a href="tel:+7 (327) 143 53 33">+7 (327) 143 53 33</a>
+            </div>
+          </li>
+          <li>
+            <div class="contacts-content__img">
+              <img src="img/contacts/convert.png" alt="">
+            </div>
+            testemail@gmail.com
+          </li>
+          <li>
+            <div class="contacts-content__img">
+              <img src="img/contacts/clock.png" alt="">
+            </div>
+            Пн-Пт   |   9:00 — 21:00 
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 </main>
 <footer id="footer">
+  <div class="container">
+    <div class="footer-column">
+      <img class="footer-logo" src="img/logo.png" alt="">
+      <h3>ремонт квартир в Москве и в области</h3>
+    </div>
+    <div class="footer-column">
+      <a class="footer-nav" href="#">Виды ремонта</a>
+      <a class="footer-nav" href="#">Рассчитать стоимость</a>
+      <a class="footer-nav" href="#">Примеры работ</a>
+    </div>
+    <div class="footer-column">
+      <a class="footer-nav" href="#">FAQs</a>
+      <a class="footer-nav" href="#">Наши преимущества</a>
+      <a class="footer-nav" href="#">Контакты</a>
+    </div>
+    <div class="footer-column btn-column">
+      <a class="footer__tel" href="tel:+7 (327) 143 53 33">+7 (327) 143 53 33</a>
+      <a class="btn" href="#">Заказать звонок</a>
+    </div>
+    <div class="footer-copyright">
+      <p>©2019 Ремонт. Все права защищены</p>
+    </div>
+  </div>
 </footer>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <script>
   $('.kinds-slider__item').on('click', function(){
-    $('.kinds-slider__item').removeClass('active');
-    $(this).addClass('active');
+    $('.kinds-slider__item').removeClass('kinds-active');
+    $(this).addClass('kinds-active');
   });
 </script>
 <script type="text/javascript">
@@ -303,5 +441,32 @@
    })
  });
 </script>
+<!-- <script>
+  $('.faqs-wrap__item').on('click', function(){
+    $('.faqs-wrap__item').removeClass('faqs-active');
+    $(this).addClass('faqs-active');
+  });
+</script> -->
+<!-- <script>
+  $(".faqs-wrap__item").click(function(){
+    $(this).children("p").toggleClass("faqs-active").slideToggle("slow");
+  });
+
+
+</script> -->
+<script>
+  $('.faqs-wrap__item').on('click', function(){
+    $('.faqs-wrap__item').removeClass('faqs-active');
+    $(this).toggleClass('faqs-active');
+  });
+</script>
+
+<!-- <script type="text/javascript">
+$(document).ready(function(){
+$('.faqs-wrap__item').addClass('faqs-active');
+$('.faqs-wrap__item').click(function(){
+    $(this).next().removeClass('faqs-active')});
+});
+</script>  -->
 </body>
 </html>

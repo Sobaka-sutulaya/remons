@@ -1,4 +1,4 @@
-body, header, input, fieldset, option, select, legend, form, section, span, li, ul, div, hr, button, a, p, img, h1, h2, h3, h4 {
+body, header, input, fieldset, textarea, option, select, legend, form, section, span, li, ul, div, hr, button, a, p, img, h1, h2, h3, h4 {
 	margin: 0px 0px;
 	padding: 0px 0px;
 } 
@@ -28,9 +28,26 @@ a {
 	text-decoration: none;
 }
 // reset form
-select, input, button {
+select, input, textarea {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
+	border: none;
+	resize:none;
+	color: #7d7d7d;
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 1.05px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+button {
 	border: none;
 }

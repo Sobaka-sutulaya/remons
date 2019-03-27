@@ -19,7 +19,7 @@ section {
 	z-index: 5;
 	position: fixed;
 	width: 100%;
-	background-color: #1c1b22;
+	background-color: @dark-color;
 	height: 100px;
 	display: flex;
 	align-items: center;
@@ -114,8 +114,8 @@ section {
 		padding: 10px 20px;
 		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 		border-radius: 20px;
-		border: 2px solid #efc33d;
-		color: #efc33d;
+		border: 2px solid @second-color;
+		color: @second-color;
 		font-size: 14px;
 		font-weight: 700;
 		/* Text style for "Расчитать" */
@@ -163,7 +163,7 @@ section {
 				background: url(../img/kinds/kinds-img3.png) left center no-repeat;
 			}
 			&-title {
-				color: #1c1b22;
+				color: @dark-color;
 				font-size: 12px;
 				font-weight: 700;
 				letter-spacing: 0.9px;
@@ -171,12 +171,12 @@ section {
 				padding: 6px 14px;
 				margin-top: 40px;
 				border-radius: 0px 15px 15px 0px;
-				background-color: #efc33d;
+				background-color: @second-color;
 			}
 		}
 		.kinds-active {
-			transition: .5s all;
 			width: 300px;
+			transition: .5s;
 		}
 	}
 	.kinds-content {
@@ -184,7 +184,6 @@ section {
 		position: relative;
 		&__item {
 			display: none;
-			transition: .5s;
 			&:nth-child(3) {
 				display: block;
 			}
@@ -211,8 +210,32 @@ section {
 					}
 				}
 			}
+		}
+		&__btn {
+			margin-top: 43px;
+			padding: 4px;
+			box-sizing: border-box;
+			display: flex;
+			justify-content: flex-end;
+			width: 374px;
+			height: 52px;
+			border-radius: 26px;
+			border: 2px solid @second-color;
+			p {
+				margin: 0;
+				margin-right: 11px;
+				line-height: 40px;
+				color: @second-color;
+				font-family: "Museo";
+				font-size: 14px;
+				font-weight: 400;
+				letter-spacing: 1.8px;
+				span {
+					font-size: 24px;
+					letter-spacing: 1.8px;
+				}
+			}
 			.btn {
-				margin-top: 50px;
 				padding: 0 22px;
 			}
 		}
@@ -234,7 +257,7 @@ section {
 		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
-		color: #7d7d7d;
+		color: @light-color;
 		fieldset {
 			margin-top: 50px;
 			position: relative;
@@ -292,7 +315,7 @@ section {
 				width: 120px;
 				margin-right: 13px;
 				position: relative;
-				color: #1c1b22;
+				color: @dark-color;
 				font-weight: 700;
 				&:nth-child(4) {
 					margin-right: 0px;
@@ -305,7 +328,7 @@ section {
 				}
 				input[type="checkbox"]:checked {
 					border-radius: 20px;
-					border: 2px solid #efc33d;
+					border: 2px solid @second-color;
 				}
 				span {
 					display: inline-block;
@@ -367,16 +390,16 @@ section {
 			cursor: pointer;
 			list-style-type: none;
 			margin-right: 25px;
-			color: #7d7d7d;
+			color: @light-color;
 			font-size: 12px;
 			font-weight: 700;
 			letter-spacing: 0.9px;
 		}
 	}
 	.portfolio__nav-active {
-		color: #1c1b22 !important;
+		color: @dark-color !important;
 		border-radius: 15px;
-		background-color: #efc33d;
+		background-color: @second-color;
 	}
 	.portfolio__wrap {
 		position: relative;
@@ -403,7 +426,7 @@ section {
 		}
 	}
 	li.slick-active {
-		background-color: #efc33d !important;
+		background-color: @second-color !important;
 	}
 }
 .portfolio-prevArrow {
@@ -438,6 +461,7 @@ section {
 	.faqs-wrap {
 		width: 100%;
 		display: flex;
+		flex-wrap: wrap;
 		.left-column {
 			h4:before {
 				position: absolute;
@@ -459,7 +483,7 @@ section {
 			box-sizing: border-box;
 			width: 501px;
 			h4 {
-				color: #1c1b22;
+				color: @dark-color;
 				font-weight: 700;
 				margin-bottom: 16px;
 			}
@@ -473,7 +497,7 @@ section {
 		border-radius: 20px;
 		border: 2px solid #edbe34;
 		h4 {
-			color: #efc33d;
+			color: @second-color;
 			&:before {
 				position: absolute;
 				content: url(../img/icons/arrow-select2.png) !important;
@@ -522,7 +546,7 @@ section {
 			border-radius: 20px;
 			border: 2px solid #eeeeee;
 			width: 50%;
-			color: #7d7d7d;
+			color: @light-color;
 			font-family: Roboto;
 			font-size: 14px;
 			font-weight: 400;
@@ -567,7 +591,7 @@ section {
 			}
 			h3 {
 				margin-top: 12px;
-				color: #1c1b22;
+				color: @dark-color;
 				font-size: 18px;
 				font-weight: 700;
 			}
@@ -585,9 +609,9 @@ section {
 		width: 276px;
 		text-align: center;
 		border-radius: 20px;
-		border: 2px solid #efc33d;
-		background-color: #efc33d;
-		color: #1c1b22;
+		border: 2px solid @second-color;
+		background-color: @second-color;
+		color: @dark-color;
 		font-family: "Museo";
 		font-size: 18px;
 		font-weight: 400;
@@ -650,7 +674,7 @@ section {
 			display: flex;
 			flex-direction: column;
 			a {
-				color: #333333;
+				color: @main-color;
 			}
 		}
 	}
@@ -658,7 +682,7 @@ section {
 #footer {
 	padding-top: 37px;
 	padding-bottom: 31px;
-	background-color: #1c1b22;
+	background-color: @dark-color;
 	.container {
 		display: flex;
 		flex-direction: row;

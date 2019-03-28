@@ -11,6 +11,10 @@ body {
 	line-height: 24px;
 	letter-spacing: 1.05px;
 }
+main {
+	overflow: hidden;
+	background: url(../img/dasf.png) bottom center no-repeat;
+}
 section {
 	box-sizing: border-box;
 }
@@ -47,6 +51,7 @@ section {
 		.header__desc {
 			max-width: 104px;
 			h3 {
+				line-height: 14px;
 				opacity: 0.5;
 				color: #ffffff;
 				font-size: 12px;
@@ -72,11 +77,15 @@ section {
 			&:before {
 				content: url(../img/icons/phone.png);
 				margin-right: 29px;
+				margin-top: 7px;
 			}
 		}
 		.header__btn {
 			padding: 0px 20px;
 			margin-right: 50px;
+		}
+		.header__burger {
+			margin-top: 6px;
 		}
 	}
 }
@@ -187,7 +196,8 @@ section {
 			&:nth-child(3) {
 				display: block;
 			}
-			h2 {		
+			h2 {
+				margin-top: -12px;	
 				display: flex;
 				align-items: flex-end;
 				&:after {
@@ -195,7 +205,7 @@ section {
 				}
 			}
 			p {
-				margin-top: 18px;
+				margin-top: 27px;
 			}
 			ul {
 				margin-top: 31px;
@@ -212,7 +222,7 @@ section {
 			}
 		}
 		&__btn {
-			margin-top: 43px;
+			margin-top: 46px;
 			padding: 4px;
 			box-sizing: border-box;
 			display: flex;
@@ -253,13 +263,14 @@ section {
 		}
 	}
 	.calc__form {
-		margin-top: -8px;
+		margin-top: 11px;
+		padding-left: 67px;
 		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
 		color: @light-color;
 		fieldset {
-			margin-top: 50px;
+			margin-top: 44px;
 			position: relative;
 			border: none;
 			min-width: 30%;
@@ -304,8 +315,13 @@ section {
 		}
 		&-select {	
 			select {
-				padding-right: 36px;
-				background: url(../img/icons/arrow-select.png) right center no-repeat;
+				height: 40px;
+				border-radius: 20px;
+				border: 2px solid #eeeeee;
+				padding-right: 41px;
+				padding-left: 16px;
+				background: url(../img/icons/arrow-select.png) no-repeat;
+				background-position: 93% 50%;
 			}
 		}
 		&-checkbox {
@@ -324,7 +340,8 @@ section {
 					position: absolute;
 					width: 100%;
 					height: 100%;
-					opacity: 1;
+					border-radius: 20px;
+					border: 2px solid #eeeeee;
 				}
 				input[type="checkbox"]:checked {
 					border-radius: 20px;
@@ -339,10 +356,13 @@ section {
 		}
 		&-input {
 			input {
+				text-align: center;
+				margin-right: 28px;
 				width: 76px;
 				height: 40px;
 				border-radius: 20px;
 				border: 2px solid #eeeeee;
+				background-color: transparent;
 			}
 			label {
 				width: 40px;
@@ -358,7 +378,8 @@ section {
 				left: 0px;
 			}
 			.btn {
-				margin-top: 60px;
+				z-index: 1;
+				margin-top: 43px;
 				cursor: pointer;
 				width: 290px;
 			}	
@@ -400,6 +421,7 @@ section {
 		color: @dark-color !important;
 		border-radius: 15px;
 		background-color: @second-color;
+		box-shadow: 0 8px 24px rgba(51, 51, 51, 0.35);
 	}
 	.portfolio__wrap {
 		position: relative;
@@ -414,7 +436,7 @@ section {
 		margin: 0;
 		width: 2%;
 		height: 4px;
-		background-color: #d5d5d5;
+		background-color: #eeeeee;
 		&:nth-child(1) {
 			border-radius: 2px 0px 0px 2px;
 		}
@@ -459,6 +481,7 @@ section {
 		text-align: center;
 	}
 	.faqs-wrap {
+		margin-top: -22px;
 		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
@@ -477,11 +500,15 @@ section {
 			}
 		}
 		&__item {
+			margin-top: 20px;
 			margin-left: 70px;
 			padding: 6px 30px 9px 52px;
 			position: relative;
 			box-sizing: border-box;
-			width: 501px;
+			width: 502px;
+			height: 40px;
+			border-radius: 20px;
+			border: 2px solid #eeeeee;
 			h4 {
 				color: @dark-color;
 				font-weight: 700;
@@ -540,12 +567,14 @@ section {
 		margin-top: 31px;
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: space-between;
 		input {
+			padding: 15px;
 			box-sizing: border-box;
 			height: 40px;
+			width: 206px;
 			border-radius: 20px;
 			border: 2px solid #eeeeee;
-			width: 50%;
 			color: @light-color;
 			font-family: Roboto;
 			font-size: 14px;
@@ -570,6 +599,11 @@ section {
 			cursor: pointer;
 		}
 	}
+}
+#advantages-sertificate {
+	background: url(../img/back1.png) center center no-repeat;
+	position: relative;
+	z-index: -2;
 }
 #advantages-section {
 	padding-top: 86px;
@@ -603,6 +637,7 @@ section {
 }
 #sertificate-section {
 	padding-top: 94px;
+	padding-bottom: 100px;
 	h3 {
 		position: relative;
 		margin: 0 auto;
@@ -618,6 +653,7 @@ section {
 		line-height: 36px;
 		text-transform: uppercase;
 		letter-spacing: 0.9px;
+		box-shadow: 0 8px 24px rgba(51, 51, 51, 0.35);
 		&:before {
 			position: absolute;
 			top: -6px;
@@ -644,24 +680,41 @@ section {
 	}
 }
 #contacts-section {
-	padding-top: 144px;
+	position: relative;
+	padding-top: 55px;
 	padding-bottom: 92px;
-	background: url(../img/contacts/contacts-fon.png) no-repeat;
 	background-position: 50% 0;
 	.container {
 		display: flex;
 		justify-content: space-between;
+		&:before {
+			position: absolute;
+			bottom: -516px;
+			left: -946px;
+			content: url(../img/bloknot.png);
+			z-index: -1;
+		}
+		&:after {
+			position: absolute;
+			top: -208px;
+			right: -348px;
+			content: url(../img/kaska.png);
+			z-index: -1;
+		}
 	}
 	.contacts-content {
 		max-width: 430px;
+		h2 {
+			margin-top: -12px;
+		}
 		p {
-			margin-top: 33px;
+			margin-top: 29px;
 		}
 		ul {
 			width: 80%;
 		}
 		li {
-			margin-top: 32px;
+			margin-top: 33px;
 			display: flex;
 			flex-direction: row;
 			font-weight: 700;	
@@ -680,7 +733,7 @@ section {
 	}
 }
 #footer {
-	padding-top: 37px;
+	padding-top: 21px;
 	padding-bottom: 31px;
 	background-color: @dark-color;
 	.container {
@@ -690,35 +743,25 @@ section {
 		flex-wrap: wrap;
 	}
 	.footer-column {
-		width: 200px;
+		width: 203px;
 		display: flex;
 		flex-wrap: wrap;
 		.footer-nav {
 			width: 100%;
 			color: #ffffff;
-			line-height: 13px;
+			line-height: 43px;
 		}
 		.footer-logo {
+			margin-top: 10px;
 			height: 39px;
-			margin-bottom: 19px;
+			margin-bottom: 2px;
 			padding-bottom: 18px;
 			border-bottom: 2px solid #333238;
 		}
 		h3 {
-			width: 167px;
-			opacity: 0.5;
-			color: #ffffff;
-			font-size: 12px;
-			font-weight: 400;
-			letter-spacing: 0.9px;
-		}
-		.btn {
-			width: 179px;
-			height: 40px;
-			text-align: center;
-			color: #333;
 		}
 		.footer__tel {
+			margin-top: 20px;
 			width: 100%;
 			display: flex;
 			justify-content: space-between;
@@ -735,8 +778,16 @@ section {
 	}
 	.btn-column {
 		justify-content: flex-end;
+		.btn {
+			margin-top: 6px;
+			width: 179px;
+			height: 40px;
+			text-align: center;
+			color: #333;
+		}
 	}
 	.footer-copyright {
+		margin-top: 15px;
 		width: 100%;
 		text-align: center;
 		opacity: 0.5;

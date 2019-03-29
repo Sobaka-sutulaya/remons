@@ -13,10 +13,12 @@ body {
 }
 main {
 	overflow: hidden;
-	background: url(../img/dasf.png) bottom center no-repeat;
 }
 section {
 	box-sizing: border-box;
+}
+.mobile {
+	display: none;
 }
 
 #header {
@@ -24,13 +26,18 @@ section {
 	position: fixed;
 	width: 100%;
 	background-color: @dark-color;
-	height: 100px;
+	min-height: 100px;
 	display: flex;
 	align-items: center;
 	.container {
+		min-height: 100px;
 		display: flex;
+		flex-wrap: wrap-reverse;
 		justify-content: space-between;
 		border-bottom: 2px solid rgba(255, 255, 255, .1);
+	}
+	.header__btn-mobile {
+		display: none;
 	}
 	.left-column {
 		display: flex;
@@ -49,7 +56,7 @@ section {
 			}
 		}
 		.header__desc {
-			max-width: 104px;
+			width: 104px;
 			h3 {
 				line-height: 14px;
 				opacity: 0.5;
@@ -161,7 +168,7 @@ section {
 			border-right: 20px solid #fff;
 			width: 179px;
 			height: 550px;
-			background-size: cover;
+			background-size: cover !important;
 			&:nth-child(1) {
 				background: url(../img/kinds/kinds-img1.png) left center no-repeat;
 			}
@@ -188,6 +195,9 @@ section {
 			transition: .5s;
 		}
 	}
+	.btn__wrap {
+		display: none;
+	}
 	.kinds-content {
 		width: 430px;
 		position: relative;
@@ -200,6 +210,7 @@ section {
 				margin-top: -12px;	
 				display: flex;
 				align-items: flex-end;
+				justify-content: space-between;
 				&:after {
 					content: url(../img/icons/fire.png);
 				}
@@ -210,19 +221,23 @@ section {
 			ul {
 				margin-top: 31px;
 				li {
-					margin-top: 13px;
+					position: relative;
+					padding-left: 50px;
+					margin-top: 7px;
 					list-style-type: none;
 					font-weight: 700;
-					line-height: 24px;
+					line-height: 33px;
 					&:before {
 						content: url(../img/icons/check.png);
-						margin-right: 30px;
+						position: absolute;
+						left: -2px;
+						top: 6px;
 					}
 				}
 			}
 		}
 		&__btn {
-			margin-top: 46px;
+			margin-top: 42px;
 			padding: 4px;
 			box-sizing: border-box;
 			display: flex;
@@ -304,7 +319,7 @@ section {
 			}
 			&:nth-child(4) {
 				legend:before {
-					content: url(../img/calc/3.png);
+					content: url(../img/calc/4.png);
 				}
 			}
 			&:nth-child(5) {
@@ -325,7 +340,11 @@ section {
 			}
 		}
 		&-checkbox {
+			legend {
+				margin-bottom: 0 !important;
+			}
 			label {
+				margin-top: 18px;
 				display: inline-block;
 				line-height: 40px;
 				width: 120px;
@@ -369,19 +388,20 @@ section {
 			}
 		}
 		&-btn {
+			margin-top: 86px !important;
 			padding-top: auto;
 			position: relative;
 			&:before {
 				content: url(../img/calc/arrow.png);
 				position: absolute;
-				top: -10px;
+				top: -56px;
 				left: 0px;
 			}
 			.btn {
 				z-index: 1;
-				margin-top: 43px;
 				cursor: pointer;
-				width: 290px;
+				max-width: 290px;
+				padding: 0px 28px;
 			}	
 		}
 	}
@@ -474,17 +494,17 @@ section {
 #faqs-section {
 	margin-top: 314px;
 	padding-bottom: 103px;
-	height: 497px;
+	min-height: 497px;
 	background: url(../img/faqs-fon.png) bottom center no-repeat;
 	h2 {
 		width: 100%;
 		text-align: center;
 	}
 	.faqs-wrap {
-		margin-top: -22px;
 		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: space-around;
 		.left-column {
 			h4:before {
 				position: absolute;
@@ -500,9 +520,9 @@ section {
 			}
 		}
 		&__item {
+			overflow-y: hidden;
 			margin-top: 20px;
-			margin-left: 70px;
-			padding: 6px 30px 9px 52px;
+			padding: 0px 30px 0px 52px;
 			position: relative;
 			box-sizing: border-box;
 			width: 502px;
@@ -512,6 +532,7 @@ section {
 			h4 {
 				color: @dark-color;
 				font-weight: 700;
+				line-height: 40px;
 				margin-bottom: 16px;
 			}
 			p {
@@ -564,11 +585,11 @@ section {
 	}
 	form {
 		position: relative;
-		margin-top: 31px;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		input {
+			margin-top: 31px;
 			padding: 15px;
 			box-sizing: border-box;
 			height: 40px;
@@ -682,7 +703,7 @@ section {
 #contacts-section {
 	position: relative;
 	padding-top: 55px;
-	padding-bottom: 92px;
+	padding-bottom: 63px;
 	background-position: 50% 0;
 	.container {
 		display: flex;
@@ -700,6 +721,13 @@ section {
 			right: -348px;
 			content: url(../img/kaska.png);
 			z-index: -1;
+		}
+	}
+	.contacts-map {
+		margin-bottom: 30px;
+		max-width: 100%;
+		img {
+			width: 100%;
 		}
 	}
 	.contacts-content {
@@ -761,6 +789,7 @@ section {
 		h3 {
 		}
 		.footer__tel {
+			order: 2;
 			margin-top: 20px;
 			width: 100%;
 			display: flex;

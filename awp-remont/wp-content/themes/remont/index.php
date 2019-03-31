@@ -388,16 +388,16 @@
             <p>Sale atomorum sadipscing ut eos, adhuc volumus te ius, usu populo noster ne. Mea ut clita iuvaret feugiat, duo ex odio appetere.</p>
           </div> 
           <div class="sertificate-wrap">
-            <a href="<?php echo get_template_directory_uri(); ?>/img/certificate/1.png">
+            <a href="<?php echo get_template_directory_uri(); ?>/img/certificate/1big.png">
               <img src="<?php echo get_template_directory_uri(); ?>/img/certificate/1.png" alt="">
             </a>
-            <a href="<?php echo get_template_directory_uri(); ?>/img/certificate/2.png">
+            <a href="<?php echo get_template_directory_uri(); ?>/img/certificate/2big.png">
               <img src="<?php echo get_template_directory_uri(); ?>/img/certificate/2.png" alt="">
             </a>
-            <a href="<?php echo get_template_directory_uri(); ?>/img/certificate/1.png">
+            <a href="<?php echo get_template_directory_uri(); ?>/img/certificate/1big.png">
               <img src="<?php echo get_template_directory_uri(); ?>/img/certificate/1.png" alt="">
             </a>
-            <a href="<?php echo get_template_directory_uri(); ?>/img/certificate/2.png"><img src="<?php echo get_template_directory_uri(); ?>/img/certificate/2.png" alt=""></a>
+            <a href="<?php echo get_template_directory_uri(); ?>/img/certificate/2big.png"><img src="<?php echo get_template_directory_uri(); ?>/img/certificate/2.png" alt=""></a>
           </div>
         </div>
       </div>
